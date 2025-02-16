@@ -362,9 +362,11 @@ class VideoLooper:
                 # Draw the labels to the screen
 
                 self._screen.fill(self._bgcolor)
+                if self._bgimage[0] is not None:
+                    self._screen.blit(self._bgimage[0], (self._bgimage[1], self._bgimage[2]))
                 self._screen.blit(top_label, (top_x, top_y))
                 self._screen.blit(bottom_label, (bottom_x, bottom_y))
-                pygame.display.update()
+                pygame.display.flip()
 
                 time.sleep(1)
 
