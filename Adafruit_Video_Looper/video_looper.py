@@ -74,7 +74,9 @@ class VideoLooper:
         self._bottom_datetime_display_format = self._config.get('video_looper', 'bottom_datetime_display_format', raw=True)
         # Parse string of 3 comma separated values like "255, 255, 255" into
         # list of ints for colors.
-        self._bgcolor = (0, 0, 0, 0)
+        self._bgcolor = list(map(int, self._config.get('video_looper', 'bgcolor')
+                                             .translate(str.maketrans('','', ','))
+                                             .split()))
         self._fgcolor = list(map(int, self._config.get('video_looper', 'fgcolor')
                                              .translate(str.maketrans('','', ','))
                                              .split()))
