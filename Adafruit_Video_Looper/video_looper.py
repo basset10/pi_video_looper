@@ -318,7 +318,8 @@ class VideoLooper:
             time.sleep(1)
 
     def _display_datetime(self):
-        # returns suffix based on the day
+        self._bgimage = self._load_bgimage()
+         
         def get_day_suffix(day):
             if day in [1, 21, 31]:
                 suffix = "st"
@@ -329,7 +330,7 @@ class VideoLooper:
             else:
                 suffix = "th"
             return suffix
-
+            
         sw, sh = self._screen.get_size()
 
         for i in range(self._wait_time):
