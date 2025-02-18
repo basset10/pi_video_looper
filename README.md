@@ -7,7 +7,7 @@ Download here:
 <https://downloads.raspberrypi.com/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2022-01-28/2022-01-28-raspios-buster-armhf-lite.zip>
 
 ## Setup
-For maximum compatibility ensure the usename on your Raspberry Pi is "pi".  
+For maximum compatibility ensure the username on your Raspberry Pi is "pi".  
 `sudo apt-get update`  
 `sudo apt-get install git `  
 `git clone https://www.github.com/basset10/pi_video_looper.git`  
