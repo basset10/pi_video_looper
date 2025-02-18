@@ -13,9 +13,6 @@ Download here:
 `cd pi_video_looper`  
 `sudo ./install.sh`  
 
-Default player is omxplayer. Use the `no_hello_video` flag to install without the hello_video player (a bit faster to install):  
-`sudo ./install.sh no_hello_video`
-
 ## Updating
 Plug in a keyboard and press ESC to access the terminal.    
 `cd ~`   
