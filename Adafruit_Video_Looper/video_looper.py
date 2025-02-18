@@ -3,6 +3,7 @@
 # License: GNU GPLv2, see LICENSE.txt
 
 import configparser
+import random
 import importlib
 import os
 import re
@@ -319,6 +320,8 @@ class VideoLooper:
 
     def _display_datetime(self):
         self._bgimage = self._load_bgimage()
+        #Wait time is between 4 and 9 seconds
+        self._wait_time = random.randint(4, 9)
          
         def get_day_suffix(day):
             if day in [1, 21, 31]:
