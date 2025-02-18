@@ -6,6 +6,8 @@ Currently only the __Legacy__ version of Raspberry Pi OS Lite is supported.
 Download here:
 <https://downloads.raspberrypi.com/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2022-01-28/2022-01-28-raspios-buster-armhf-lite.zip>
 
+This program has been tested on the Raspberry Pi Zero 2 W
+
 ## Setup
 For maximum compatibility ensure the username on your Raspberry Pi is "pi".  
 `sudo apt-get update`  
