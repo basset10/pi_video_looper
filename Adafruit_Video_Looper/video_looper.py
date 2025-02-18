@@ -287,7 +287,7 @@ class VideoLooper:
         # Default to small font if not provided.
         if font is None:
             font = self._small_font
-        return font.render(message, True, self._fgcolor, self._bgcolor)
+        return font.render(message, True, self._fgcolor)
 
     def _animate_countdown(self, playlist):
         """Print text with the number of loaded movies and a quick countdown
