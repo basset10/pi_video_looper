@@ -1,5 +1,5 @@
 # pi_video_looper
-A fork of Adafruit's Pi Video Looper for personal use.
+A fork of Adafruit's pi_video_looper for personal use.
 https://github.com/adafruit/pi_video_looper
 
 Currently only the __Legacy__ version of Raspberry Pi OS Lite is supported.  
