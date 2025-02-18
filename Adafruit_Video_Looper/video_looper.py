@@ -162,25 +162,8 @@ class VideoLooper:
                 screen_w, screen_h = self._size
                 image_w, image_h = image.get_size()
 
-                screen_aspect_ratio = screen_w / screen_h
-                photo_aspect_ratio = image_w / image_h
 
-                if screen_aspect_ratio < photo_aspect_ratio:  # Width is binding
-                    new_image_w = screen_w
-                    new_image_h = int(new_image_w / photo_aspect_ratio)
-                    image = pygame.transform.scale(image, (new_image_w, new_image_h))
-                    image_y = (screen_h - new_image_h) // 2
-
-                elif screen_aspect_ratio > photo_aspect_ratio:  # Height is binding
-                    new_image_h = screen_h
-                    new_image_w = int(new_image_h * photo_aspect_ratio)
-                    image = pygame.transform.scale(image, (new_image_w, new_image_h))
-                    image_x = (screen_w - new_image_w) // 2
-
-                else:  # Images have the same aspect ratio
-                    image = pygame.transform.scale(image, (screen_w, screen_h))
-
-        return (image, image_x, image_y)
+        return (image, 0, 0)
 
     def _is_number(self, s):
         try:
