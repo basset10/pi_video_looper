@@ -7,11 +7,11 @@ Download here:
 <https://downloads.raspberrypi.com/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2022-01-28/2022-01-28-raspios-buster-armhf-lite.zip>
 
 ## Setup
-`sudo apt-get update`
-`sudo apt-get install git`
-`git clone https://www.github.com/basset10/pi_video_looper.git`
-`cd pi_video_looper`
-`sudo ./install.sh`
+`sudo apt-get update`  
+`sudo apt-get install git `  
+`git clone https://www.github.com/basset10/pi_video_looper.git`  
+`cd pi_video_looper`  
+`sudo ./install.sh`  
 
 Default player is omxplayer. Use the `no_hello_video` flag to install without the hello_video player (a bit faster to install):  
 `sudo ./install.sh no_hello_video`
