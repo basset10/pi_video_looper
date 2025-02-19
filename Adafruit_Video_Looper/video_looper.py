@@ -309,7 +309,6 @@ class VideoLooper:
             time.sleep(1)
 
     def _display_datetime(self):
-        pygame.display.flip()
         self._wait_time = random.randint(4, 9)
         self._small_font = pygame.font.Font(None, 50)
         self._medium_font = pygame.font.SysFont(None, 60)
