@@ -365,7 +365,11 @@ class VideoLooper:
                 self._screen.blit(bottom_label, (bottom_x, bottom_y-10))
                 pygame.display.flip()
 
-                time.sleep(1)
+                time.sleep(0.1)
+        self._screen.fill(self._bgcolor)
+        self._screen.blit(self._bgimage[0], (self._bgimage[1], self._bgimage[2]))
+        self._screen.blit(top_label, (top_x, top_y-10))
+        self._screen.blit(bottom_label, (bottom_x, bottom_y-10))
         self._bgimage = self._load_bgimage()
         pygame.display.flip()
 
