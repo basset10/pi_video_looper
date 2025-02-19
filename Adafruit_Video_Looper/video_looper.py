@@ -370,7 +370,7 @@ class VideoLooper:
         self._screen.blit(top_label, (top_x, top_y-10))
         self._screen.blit(bottom_label, (bottom_x, bottom_y-10))
 
-        pygame.display.flip()
+
 
     def _idle_message(self):
         """Print idle message from file reader."""
@@ -557,7 +557,7 @@ class VideoLooper:
                     self._print('Playing movie: {0} {1}'.format(movie, infotext))
                     # todo: maybe clear screen to black so that background (image/color) is not visible for videos with a resolution that is < screen resolution
                     self._player.play(movie, loop=player_loop, vol = self._sound_vol)
-
+                    pygame.display.flip()
             # Check for changes in the file search path (like USB drives added)
             # and rebuild the playlist.
             if self._reader.is_changed() and not self._playbackStopped:
