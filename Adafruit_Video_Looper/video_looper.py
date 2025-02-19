@@ -366,8 +366,8 @@ class VideoLooper:
                 pygame.display.flip()
 
                 time.sleep(1)
-            self._bgimage = self._load_bgimage()
-            pygame.display.flip()
+        self._bgimage = self._load_bgimage()
+        pygame.display.flip()
 
     def _idle_message(self):
         """Print idle message from file reader."""
