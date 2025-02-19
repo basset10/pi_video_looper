@@ -106,8 +106,8 @@ class VideoLooper:
         # Set other static internal state.
         self._extensions = '|'.join(self._player.supported_extensions())
         self._small_font = pygame.font.Font(None, 50)
-        self._medium_font = pygame.font.SysFont("gabriola", 96)
-        self._big_font = pygame.font.SysFont("gabriola", 250)
+        self._medium_font = pygame.font.SysFont(None, 60)
+        self._big_font = pygame.font.SysFont(None, 128)
         self._running  = True
         # set the inital playback state according to the startup setting.
         self._playbackStopped = not self._play_on_startup
@@ -305,9 +305,9 @@ class VideoLooper:
         self._bgimage = self._load_bgimage()
         #Wait time is between 4 and 9 seconds
         self._wait_time = random.randint(4, 9)
-        self._small_font = pygame.font.Font("gabriola", 50)
-        self._medium_font = pygame.font.SysFont("gabriola", 60)
-        self._big_font = pygame.font.SysFont("gabriola", 128)
+        self._small_font = pygame.font.Font(None, 50)
+        self._medium_font = pygame.font.SysFont(None, 60)
+        self._big_font = pygame.font.SysFont(None, 128)
          
         def get_day_suffix(day):
             if day in [1, 21, 31]:
