@@ -50,6 +50,9 @@ class VideoLooper:
         """Create an instance of the main video looper application class. Must
         pass path to a valid video looper ini configuration file.
         """
+
+        
+        
         # Load the configuration.
         self._config = configparser.ConfigParser()
         if len(self._config.read(config_path)) == 0:
@@ -87,7 +90,9 @@ class VideoLooper:
         pygame.mouse.set_visible(False)
         self._screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
         self._size = (pygame.display.Info().current_w, pygame.display.Info().current_h)
-        self._bgimage = self._load_bgimage() #a tupple with pyimage, xpos, ypos
+        #self._bgimage = self._load_bgimage() #a tupple with pyimage, xpos, ypos
+        loader1 = pygame.image.load('/home/pi/loader.png')
+        loader2 = pygame.image.load('/home/pi/loader2.png')
         self._blank_screen()
         # Load configured video player and file reader modules.
         self._player = self._load_player()
@@ -309,9 +314,11 @@ class VideoLooper:
             time.sleep(1)
 
     def _display_datetime(self):
-        self._screen.fill(self._bgcolor)
-        self._screen.blit(self._bgimage[0], (self._bgimage[1], self._bgimage[2]))
-        pygame.display.flip()
+
+        imagenumber = random.randInt(1,2)
+        
+
+        
         self._wait_time = random.randint(4, 9)
         self._small_font = pygame.font.Font(None, 50)
         self._medium_font = pygame.font.SysFont(None, 60)
@@ -360,7 +367,12 @@ class VideoLooper:
                 # Draw the labels to the screen
 
                 self._screen.fill(self._bgcolor)
-                self._screen.blit(self._bgimage[0], (self._bgimage[1], self._bgimage[2]))
+                
+                if(imagenumber == 1):
+                    self._screen.blit(loader1, (0, 0))
+                elif(imagenumber == 2):
+                    self._screen.blit(loader2, (0, 0))                
+                
                 self._screen.blit(top_label, (top_x, top_y-10))
                 self._screen.blit(bottom_label, (bottom_x, bottom_y-10))
                 pygame.display.flip()
@@ -526,7 +538,6 @@ class VideoLooper:
                     if self._wait_time > 0 and not self._firstStart:
                         if(self._datetime_display):
                             self._display_datetime()
-                            self._bgimage = self._load_bgimage()
                         else:
                             self._print('Waiting for: {0} seconds'.format(self._wait_time))
                             time.sleep(self._wait_time)
