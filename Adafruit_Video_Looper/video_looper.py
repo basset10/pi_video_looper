@@ -85,7 +85,7 @@ class VideoLooper:
         pygame.display.init()
         pygame.font.init()
         pygame.mouse.set_visible(False)
-        self._screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN | pygame.SCALED)
+        self._screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
         self._size = (pygame.display.Info().current_w, pygame.display.Info().current_h)
         self._bgimage = self._load_bgimage() #a tupple with pyimage, xpos, ypos
         self._blank_screen()
