@@ -106,8 +106,8 @@ class VideoLooper:
         # Set other static internal state.
         self._extensions = '|'.join(self._player.supported_extensions())
         self._small_font = pygame.font.Font(None, 50)
-        self._medium_font   = pygame.font.Font(None, 96)
-        self._big_font   = pygame.font.Font(None, 250)
+        self._medium_font   = pygame.font.Font('RINGM___.TTF', 96)
+        self._big_font   = pygame.font.Font('RINGM___.TTF', 250)
         self._running    = True
         # set the inital playback state according to the startup setting.
         self._playbackStopped = not self._play_on_startup
