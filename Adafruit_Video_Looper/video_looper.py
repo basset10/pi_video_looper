@@ -309,7 +309,7 @@ class VideoLooper:
             time.sleep(1)
 
     def _display_datetime(self):
-        self._bgimage = self._load_bgimage()
+
         #Wait time is between 4 and 9 seconds
         self._wait_time = random.randint(4, 9)
         self._small_font = pygame.font.Font(None, 50)
@@ -525,6 +525,7 @@ class VideoLooper:
                     if self._wait_time > 0 and not self._firstStart:
                         if(self._datetime_display):
                             self._display_datetime()
+                            self._bgimage = self._load_bgimage()
                         else:
                             self._print('Waiting for: {0} seconds'.format(self._wait_time))
                             time.sleep(self._wait_time)
