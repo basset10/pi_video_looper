@@ -109,8 +109,141 @@ class USBDriveReaderCopy(object):
                 if os.path.exists(loader_file_path):
                     self._clear_screen()
                     self._draw_info_text("Copying splashscreen file...")
-                    time.sleep(2)
+                    time.sleep(1)
                     self._copy_with_progress(loader_file_path,'/home/pi/loader.png')
+                    
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader2.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file....")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader2.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader3.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file.....")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader3.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader4.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file......")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader4.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader5.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file......")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader5.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader6.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file.......")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader6.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader7.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file........")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader7.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader8.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file.........")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader8.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader9.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file..........")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader9.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader10.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file...........")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader10.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader11.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file............")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader11.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader12.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file.............")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader12.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader13.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file..............")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader13.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader14.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file...............")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader14.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader15.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file................")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader15.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader16.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file.................")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader16.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader17.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file...................")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader17.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader18.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file....................")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader18.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader19.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file.....................")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader19.png')
+
+                loader_file_path = '{0}/{1}'.format(path.rstrip('/'), 'loader20.png')
+                if os.path.exists(loader_file_path):
+                    self._clear_screen()
+                    self._draw_info_text("Copying splashscreen file......................")
+                    time.sleep(1)
+                    self._copy_with_progress(loader_file_path,'/home/pi/loader20.png')
                     
     def _draw_copy_progress(self, copied, total):
         perc = 100 * copied / total
