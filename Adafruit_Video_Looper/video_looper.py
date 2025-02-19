@@ -309,8 +309,6 @@ class VideoLooper:
             time.sleep(1)
 
     def _display_datetime(self):
-        self._screen.fill(self._bgcolor)
-        self._screen.blit(self._bgimage[0], (self._bgimage[1], self._bgimage[2]))
         pygame.display.flip()
         self._wait_time = random.randint(4, 9)
         self._small_font = pygame.font.Font(None, 50)
@@ -366,11 +364,12 @@ class VideoLooper:
                 pygame.display.flip()
 
                 time.sleep(0.1)
+        self._bgimage = self._load_bgimage()        
         self._screen.fill(self._bgcolor)
         self._screen.blit(self._bgimage[0], (self._bgimage[1], self._bgimage[2]))
         self._screen.blit(top_label, (top_x, top_y-10))
         self._screen.blit(bottom_label, (bottom_x, bottom_y-10))
-        self._bgimage = self._load_bgimage()
+
         pygame.display.flip()
 
     def _idle_message(self):
