@@ -153,15 +153,22 @@ class VideoLooper:
         image_x = 0
         image_y = 0
 
-        if self._config.has_option('video_looper', 'bgimage'):
-            imagepath = self._config.get('video_looper', 'bgimage')
-            if imagepath != "" and os.path.isfile(imagepath):
-                self._print('Using ' + str(imagepath) + ' as a background')
-                image = pygame.image.load(imagepath)
+        #if self._config.has_option('video_looper', 'bgimage'):
+        #    imagepath = self._config.get('video_looper', 'bgimage')
+        #    if imagepath != "" and os.path.isfile(imagepath):
+        #        self._print('Using ' + str(imagepath) + ' as a background')
+        #        image = pygame.image.load(imagepath)
 
-                screen_w, screen_h = self._size
-                image_w, image_h = image.get_size()
+        #        screen_w, screen_h = self._size
+        #        image_w, image_h = image.get_size()
 
+        #MAKE SURE THE MAX IS EQUAL TO OR LESS THAN THE NUMBER OF LOADER IMAGES
+        imagenumber = random.randint(1, 2)
+
+        if(imagenumber == 1):
+            image = pygame.image.load('/home/pi/loader.png')
+        elif(imagenumber == 2):
+            image = pygame.image.load('/home/pi/loader2.png')
 
         return (image, 0, 0)
 
