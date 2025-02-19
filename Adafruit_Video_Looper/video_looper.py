@@ -306,8 +306,8 @@ class VideoLooper:
         #Wait time is between 4 and 9 seconds
         self._wait_time = random.randint(4, 9)
         self._small_font = pygame.font.Font("gabriola", 50)
-        self._medium_font = pygame.font.SysFont("gabriola", 128)
-        self._big_font = pygame.font.SysFont("gabriola", 300)
+        self._medium_font = pygame.font.SysFont("gabriola", 60)
+        self._big_font = pygame.font.SysFont("gabriola", 128)
          
         def get_day_suffix(day):
             if day in [1, 21, 31]:
