@@ -293,7 +293,7 @@ class VideoLooper:
             time.sleep(1)
 
     def _display_datetime(self):
-        self._wait_time = random.randint(4, 9)
+        self._wait_time = random.randint(6, 11)
          
         def get_day_suffix(day):
             if day in [1, 21, 31]:
