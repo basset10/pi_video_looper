@@ -277,7 +277,7 @@ class VideoLooper:
             return
         # Draw message with number of movies loaded and animate countdown.
         # First render text that doesn't change and get static dimensions.
-        label1 = self._render_text(message + ' Starting playback in:')
+        label1 = self._render_text(message)
         l1w, l1h = label1.get_size()
         sw, sh = self._screen.get_size()
         for i in range(self._countdown_time, 0, -1):
@@ -288,7 +288,6 @@ class VideoLooper:
             # centered horizontally and vertically.
             self._screen.fill(self._bgcolor)
             self._screen.blit(label1, (round(sw/2-l1w/2), round(sh/2-l2h/2-l1h)))
-            self._screen.blit(label2, (round(sw/2-l2w/2), round(sh/2-l2h/2)))
             pygame.display.update()
             # Pause for a second between each frame.
             time.sleep(1)
