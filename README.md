@@ -13,8 +13,7 @@ For maximum compatibility ensure the username on your Raspberry Pi is "pi".
 `sudo apt-get update`  
 `sudo apt-get install git `  
 `sudo git clone https://www.github.com/basset10/pi_video_looper.git`  
-`cd pi_video_looper`  
-`cd assets`  
+`cd pi_video_looper/assets`  
 `sudo cp ring.ttf /home/pi/`  
 `sudo cp loader.png /home/pi/`  
 `cd ..`  
