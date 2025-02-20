@@ -12,14 +12,18 @@ This program has been tested on the Raspberry Pi Zero 2 W
 For maximum compatibility ensure the username on your Raspberry Pi is "pi".  
 `sudo apt-get update`  
 `sudo apt-get install git `  
-`git clone https://www.github.com/basset10/pi_video_looper.git`  
+`sudo git clone https://www.github.com/basset10/pi_video_looper.git`  
 `cd pi_video_looper`  
+`cd assets`  
+`sudo cp ring.ttf /home/pi/`  
+`sudo cp loader.png /home/pi/`
+`cd ..`
 `sudo ./install.sh`  
 
 ## Updating
 Plug in a keyboard and press ESC to access the terminal.    
 `cd ~`   
 `sudo rm -rf pi_video_looper`   
-`git clone https://github.com/basset10/pi_video_looper.git`    
+`sudo git clone https://github.com/basset10/pi_video_looper.git`    
 `cd pi_video_looper`   
 `sudo ./install.sh` 
