@@ -165,10 +165,9 @@ class VideoLooper:
         #MAKE SURE THE MAX IS EQUAL TO OR LESS THAN THE NUMBER OF LOADER IMAGES
         imagenumber = random.randint(1, 2)
 
-        if(imagenumber == 1):
-            image = pygame.image.load('/home/pi/loader.png')
-        elif(imagenumber == 2):
-            image = pygame.image.load('/home/pi/loader2.png')
+
+        image = pygame.image.load('/home/pi/loader.png')
+
 
         return (image, 0, 0)
 
