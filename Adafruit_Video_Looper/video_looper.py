@@ -106,8 +106,8 @@ class VideoLooper:
         # Set other static internal state.
         self._extensions = '|'.join(self._player.supported_extensions())
         self._small_font = pygame.font.Font('/home/pi/ring.ttf', 50)
-        self._medium_font = pygame.font.Font('/home/pi/ring.ttf', 60)
-        self._big_font = pygame.font.Font('/home/pi/ring.ttf', 128)
+        self._medium_font = pygame.font.Font('/home/pi/ring.ttf', 96)
+        self._big_font = pygame.font.Font('/home/pi/ring.ttf', 400)
         self._running  = True
         # set the inital playback state according to the startup setting.
         self._playbackStopped = not self._play_on_startup
@@ -150,20 +150,6 @@ class VideoLooper:
     def _load_bgimage(self):
         """Load the configured background image and return an instance of it."""
         image = None
-        image_x = 0
-        image_y = 0
-
-        #if self._config.has_option('video_looper', 'bgimage'):
-        #    imagepath = self._config.get('video_looper', 'bgimage')
-        #    if imagepath != "" and os.path.isfile(imagepath):
-        #        self._print('Using ' + str(imagepath) + ' as a background')
-        #        image = pygame.image.load(imagepath)
-
-        #        screen_w, screen_h = self._size
-        #        image_w, image_h = image.get_size()
-
-        #MAKE SURE THE MAX IS EQUAL TO OR LESS THAN THE NUMBER OF LOADER IMAGES
-        imagenumber = random.randint(1, 2)
 
 
         image = pygame.image.load('/home/pi/loader.png')
