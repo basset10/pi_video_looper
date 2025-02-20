@@ -16,8 +16,8 @@ For maximum compatibility ensure the username on your Raspberry Pi is "pi".
 `cd pi_video_looper`  
 `cd assets`  
 `sudo cp ring.ttf /home/pi/`  
-`sudo cp loader.png /home/pi/`
-`cd ..`
+`sudo cp loader.png /home/pi/`  
+`cd ..`  
 `sudo ./install.sh`  
 
 ## Updating
