@@ -317,7 +317,8 @@ class VideoLooper:
             time.sleep(1)
 
     def _display_datetime(self):
-        self._wait_time = random.randint(6, 11)
+        self._wait_time = random.randint(30, 300)
+        imagechanged = False
          
         def get_day_suffix(day):
             if day in [1, 21, 31]:
@@ -331,6 +332,8 @@ class VideoLooper:
             return suffix
             
         sw, sh = self._screen.get_size()
+        
+        
 
         for i in range(self._wait_time):
             if self._running:
@@ -360,6 +363,10 @@ class VideoLooper:
                 bottom_y = top_y + l1h + 50
 
                 # Draw the labels to the screen
+
+                if(top_str[-2:] == "00" and imagechanged == False)
+                    self._bgimage = self._load_bgimage()
+                    imagechanged = True
 
                 self._screen.fill(self._bgcolor)
                 self._screen.blit(self._bgimage[0], (self._bgimage[1], self._bgimage[2]))
