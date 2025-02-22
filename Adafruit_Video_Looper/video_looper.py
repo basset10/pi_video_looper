@@ -150,9 +150,33 @@ class VideoLooper:
     def _load_bgimage(self):
         """Load the configured background image and return an instance of it."""
         image = None
+        imageno = random.randint(1, 12)
+        
 
-
-        image = pygame.image.load('/home/pi/loader.png')
+        if(imageno == 1)
+            image = pygame.image.load('/home/pi/loader.png')
+        elif(imageno == 2)
+            image = pygame.image.load('/home/pi/loader2.png')
+        elif(imageno == 3)
+            image = pygame.image.load('/home/pi/loader3.png')
+        elif(imageno == 4)
+            image = pygame.image.load('/home/pi/loader4.png')
+        elif(imageno == 5)
+            image = pygame.image.load('/home/pi/loader5.png')
+        elif(imageno == 6)
+            image = pygame.image.load('/home/pi/loader6.png')
+        elif(imageno == 7)
+            image = pygame.image.load('/home/pi/loader7.png')
+        elif(imageno == 8)
+            image = pygame.image.load('/home/pi/loader8.png')
+        elif(imageno == 9)
+            image = pygame.image.load('/home/pi/loader9.png')
+        elif(imageno == 10)
+            image = pygame.image.load('/home/pi/loader10.png')
+        elif(imageno == 11)
+            image = pygame.image.load('/home/pi/loader11.png')
+        elif(imageno == 12)
+            image = pygame.image.load('/home/pi/loader12.png')
 
 
         return (image, 0, 0)
