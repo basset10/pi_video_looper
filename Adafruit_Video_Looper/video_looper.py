@@ -113,6 +113,7 @@ class VideoLooper:
         self._playbackStopped = not self._play_on_startup
         #used for not waiting the first time
         self._firstStart = True
+        self._bgLimiter = 0
 
         # start keyboard handler thread:
         # Event handling for key press, if keyboard control is enabled
@@ -364,15 +365,17 @@ class VideoLooper:
 
                 # Draw the labels to the screen
 
-                if(top_str[-2:] == "00" and imagechanged == False):
+                if(top_str[-2:] == "00" and imagechanged == False and self._bgLimiter < 0):
                     self._bgimage = self._load_bgimage()
                     imagechanged = True
+                    self._bgLimiter = 100
 
                 self._screen.fill(self._bgcolor)
                 self._screen.blit(self._bgimage[0], (self._bgimage[1], self._bgimage[2]))
                 self._screen.blit(top_label, (top_x, top_y-10))
                 self._screen.blit(bottom_label, (bottom_x, bottom_y-40))
                 pygame.display.flip()
+                self._bgLimiter = self._bgLimiter - 1
 
                 time.sleep(1)
         
