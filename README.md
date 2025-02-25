@@ -16,7 +16,7 @@ For maximum compatibility ensure the username on your Raspberry Pi is "pi".
 `cd pi_video_looper/assets`  
 `sudo cp ring.ttf /home/pi/`  
 `sudo cp loader.png /home/pi/`  
-Repeat the above command as many times as needed. Currently up to 12 loader images are supported.  
+Repeat the above command as many times as needed. Currently up to 12 loader images are supported (loader.png, loader2.png, etc).  
 `cd ..`  
 `sudo ./install.sh`  
 
